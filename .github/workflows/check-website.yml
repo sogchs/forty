@@ -1,0 +1,18 @@
+name: Check website for "2026"
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # cada 5 minutos
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run check script
+        run: |
+          npm install node-fetch nodemailer
+          node check.js
+
