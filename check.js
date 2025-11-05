@@ -5,7 +5,7 @@ const URLS = [
   "https://belgium.tomorrowland.com/en/welcome/",
   "https://www.tomorrowland.com/",
 ];
-const SEARCH_TERM = "2026";
+const SEARCH_TERM = "Tomorrowland Belgium 2026";
 
 async function checkUrl(url) {
   try {
