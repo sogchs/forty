@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import nodemailer from "nodemailer";
 
 const URL = "https://belgium.tomorrowland.com/en/welcome/";
-const SEARCH_TERM = "2026";
+const SEARCH_TERM = "2025";
 
 // Email config
 const transporter = nodemailer.createTransport({
